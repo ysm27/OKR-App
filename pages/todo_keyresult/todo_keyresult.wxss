@@ -1,0 +1,36 @@
+.page-container{
+  background-color:#e7e7e7;
+  height: 100vh;
+}
+.page-title{
+  font-size: 14px;
+  color: rgb(163, 163, 163);
+  margin-bottom: 20rpx;
+}
+.objective{
+  font-size: 16px;
+}
+.okr-item{
+  margin-bottom: 60rpx;
+}
+.keyresult-list{
+  margin: 30rpx 0;
+}
+.keyresult-item{
+  padding: 10rpx;
+  margin-bottom: 10rpx;
+  border-left: 2rpx solid #000;
+  border-bottom: 2rpx solid #000;
+  border-right: 2rpx solid rgb(126, 125, 125);
+  border-top: 2rpx solid rgb(126, 125, 125);
+  box-shadow: 2rpx 2rpx 5rpx 0rpx rgb(88, 87, 87);
+  background-color: rgb(252, 252, 252);
+}
+.keyresult-item.active{
+  background-color: rgb(138, 136, 136);
+  color: #fff;
+}
+.item-hover-color{
+  background-color: rgb(38, 38, 38);
+  color: #fff;
+}

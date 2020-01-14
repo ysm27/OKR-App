@@ -1,0 +1,38 @@
+.page-title{
+  font-size: 14px;
+  color: rgb(163, 163, 163);
+  margin-bottom: 20rpx;
+}
+.todo-list{
+  margin: 20rpx 0;
+}
+.todo-item{
+  background-color: #F4F4F4;
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+  overflow: hidden;
+}
+.todo-time{
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.time-title{
+  margin-right: 20rpx;
+}
+.compeleted{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 5rpx solid rgba(194, 190, 190, .7);
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(170, 168, 168);
+  font-size: 16px;
+  rotate: -45deg;
+  position: absolute;
+  right: -20rpx;
+  top: -15rpx;
+}

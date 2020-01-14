@@ -1,0 +1,26 @@
+<view class="page-container">
+  <view class="okr">
+    <view class="okr-title">{{ objective.value }}</view>
+    <view class="okr-created-time">
+      <view class="time-title">· 创建时间:</view>
+      <view>{{ objective.created_time }}</view>
+    </view>
+    <view class="okr-created-time" wx:if="{{ objective.state == 1}}">
+      <view class="time-title">· 完成时间:</view>
+      <view>{{ objective.completed_time }}</view>
+    </view>
+    <view class="compeleted" wx:if="{{ objective.state == 1}}">完成</view>
+  </view>
+  <view class="keyresult-list">
+    <view class="keyresult-item {{ item.krData.state == 1 ? 'active': ''}}" wx:for="{{ krData }}" wx:key="unique" bindtap="showActionSheet" data-id="{{ item.krData.id }}">
+      <view class="keyresult-item-content">
+        <view class="keyresult-title">{{ item.krData.value }}</view>
+        <view class="keyresult-status" wx:if="{{ item.krData.state == 1 }}">已完成</view>
+        <view class="keyresult-status" wx:if="{{ item.krData.state == 0 }}">点击标记</view>
+      </view>
+      <view class="todo-list">
+        <view class="todo-item {{ todo.state == 1 ? 'active': ''}}" wx:for="{{ item.todo }}" wx:for-item="todo" wx:key="unique">· {{ todo.value }}</view>
+      </view>
+    </view>
+  </view>
+</view>

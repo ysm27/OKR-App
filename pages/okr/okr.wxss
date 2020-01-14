@@ -1,0 +1,49 @@
+.add-btn{
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: rgb(83, 83, 83);
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 10rpx;
+}
+.btn-hover{
+  opacity: .8;
+}
+.okr-list{
+  margin: 20rpx 0;
+}
+.okr-item{
+  background-color: #F4F4F4;
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+  overflow: hidden;
+}
+.okr-created-time{
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.time-title{
+  margin-right: 20rpx;
+}
+.compeleted{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 5rpx solid rgba(194, 190, 190, .7);
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(170, 168, 168);
+  font-size: 16px;
+  rotate: -45deg;
+  position: absolute;
+  right: -20rpx;
+  top: -15rpx;
+}

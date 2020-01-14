@@ -1,0 +1,17 @@
+<view class="page-container">
+  <view class="circle circle-1"></view>
+  <view class="circle circle-2"></view>
+  <view class="circle circle-3"></view>
+  <view class="page-title">
+    <view class="cn-title">目标和关键成果</view>
+    <view class="en-title">Objective and Key Result</view>
+  </view>
+  <view class="title-description">
+    <view class="description-item">目标： 我想让网站打开速度快一些</view>
+    <view class="description-item">-- 成果： 打开速度快30%</view>
+    <view class="description-item">---- todo：替换较大的资源库</view>
+    <view class="description-item">---- todo：JavaScript 代码压缩</view>
+    <view class="description-item">---- todo：图片资源压缩和代理</view>
+  </view>
+  <button class="start-btn" hover-class="hover-color" open-type="getUserInfo" bindgetuserinfo="login">立即体验</button>
+</view>

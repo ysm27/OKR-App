@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/okr/okr",
+    "pages/okr_detail/okr_detail",
+    "pages/todo/todo",
+    "pages/todo_keyresult/todo_keyresult",
+    "pages/okr_edit/okr_edit",
+    "pages/okr_create/okr_create",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "navigationBarTitleText": "OKR 管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "backgroundColor": "#F4F4F4",
+    "list":[
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "Todos",
+        "iconPath": "/images/todo.png",
+        "selectedIconPath": "/images/todo-active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "Done",
+        "iconPath": "/images/done.png",
+        "selectedIconPath": "/images/done-active.png"
+      },
+      {
+        "pagePath": "pages/okr/okr",
+        "text": "OKR",
+        "iconPath": "/images/okr.png",
+        "selectedIconPath": "/images/okr-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

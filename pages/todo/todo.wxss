@@ -1,0 +1,26 @@
+.page-title{
+  font-size: 14px;
+  color: rgb(163, 163, 163);
+  margin-bottom: 20rpx;
+}
+.todo-input{
+  border: 2rpx solid #000;
+  padding: 20rpx;
+}
+.todo-list{
+  margin: 20rpx 0;
+}
+.todo-item{
+  background-color: #F4F4F4;
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+}
+.todo-created-time{
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.time-title{
+  margin-right: 20rpx;
+}

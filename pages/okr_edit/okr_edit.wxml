@@ -1,0 +1,21 @@
+<view class="page-container">
+  <view class="main-content">
+    <view class="objective">
+      <view class="objective-title">Objective 目标：</view>
+      <view class="add-objective">
+        <input class="add-input" placeholder="请输入你的目标" value="{{ objective.value }}" bindblur="getObjective"></input>
+        <button class="add-btn" hover-class="btn-hover-color" bindtap="handleAddKr">+</button>
+      </view>
+    </view>
+    <view class="objective" wx:for="{{ keyresult }}" wx:key="unique">
+      <view class="objective-title">KeyResult 成果{{ index + 1 }}：</view>
+      <view class="add-objective">
+        <input class="add-input" placeholder="请输入你的目标" value="{{ item.value }}" bindblur="getKeyresult" data-index="{{ index }}" data-id="{{ item.id }}"></input>
+        <button class="add-btn delete" hover-class="btn-hover-color" bindtap="handleDeleteKr" data-index="{{ index }}">-</button>
+      </view>
+    </view>
+  </view>
+  <view class="create-btn">
+    <button hover-class="btn-hover-color" bindtap="handleSave">保存</button>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="page-container">
+  <view class="page-title">你必须做你不得不做的事</view>
+  <view class="add-todo">
+    <input class="todo-input" placeholder="请输入你需要完成的事情" bindconfirm="addTodo" value="{{ todoValue }}"></input>
+  </view>
+  <view class="todo-list">
+    <view wx:for="{{ todo }}" wx:key="unique" class="todo-item" data-id="{{ item.id }}"    bindtap="showActionSheet">
+      <view class="todo-title">{{ item.value }}</view>
+      <view class="todo-created-time">
+        <view class="time-title">· 创建时间:</view>
+        <view>{{ item.created_time }}</view>
+      </view>
+    </view>
+  </view>
+</view>

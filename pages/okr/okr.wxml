@@ -1,0 +1,19 @@
+<view class="page-container">
+  <view class="add-okr">
+    <navigator class="add-btn" hover-class="btn-hover" url="/pages/okr_create/okr_create">添加 OKR</navigator>
+  </view>
+  <view class="okr-list">
+    <view class="okr-item" wx:for="{{ objective }}" wx:key="unique" data-id="{{ item.id }}" bindtap="showActionSheet">
+      <view class="okr-title">{{ item.value }}</view>
+      <view class="okr-created-time">
+        <view class="time-title">· 创建时间:</view>
+        <view>{{ item.created_time }}</view>
+      </view>
+      <view class="okr-created-time" wx:if="{{ item.state == 1}}">
+        <view class="time-title">· 完成时间:</view>
+        <view>{{ item.completed_time }}</view>
+      </view>
+      <view class="compeleted" wx:if="{{ item.state == 1}}">完成</view>
+    </view>
+  </view>
+</view>

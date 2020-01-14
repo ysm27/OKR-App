@@ -1,0 +1,11 @@
+<view class="page-container">
+  <view class="page-title">请选择关键成果 KR（KeyResult）进行绑定</view>
+  <view class="okr-list">
+    <view class="okr-item" wx:for="{{ okrList }}" wx:key="unique">
+      <view class="objective">目标{{ index + 1 }}：{{ item.objective.value }}</view>
+      <view class="keyresult-list" wx:for="{{ item.keyresult }}" wx:for-item="kr" wx:key="unique">
+        <view class="keyresult-item {{isActive?'active':''}}" data-id="{{ kr.id }}" hover-class="item-hover-color" bindtap="handleActive">{{ kr.value }}</view>
+      </view>
+    </view>
+  </view>
+</view>

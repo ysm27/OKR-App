@@ -1,0 +1,18 @@
+<view class="page-container">
+  <view class="page-title">已完成的Todos,真棒～</view>
+  <view class="todo-list">
+    <view class="todo-item" wx:for="{{ todo }}" wx:key="unique" bindtap="showActionSheet" data-id="{{ item.id }}">
+      <view class="todo-title">{{ item.value }}</view>
+      <view class="todo-time">
+        <view class="time-title">· 创建时间:</view>
+        <view>{{ item.created_time }}</view>
+      </view>
+      <view class="todo-time">
+        <view class="time-title">· 完成时间:</view>
+        <view>{{ item.completed_time }}</view>
+      </view>
+      <view class="compeleted">完成</view>
+    </view>
+  </view>
+</view>
+

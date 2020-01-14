@@ -1,0 +1,40 @@
+.main-content{
+  height: 1050rpx;
+  overflow: scroll;
+}
+.add-objective{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.add-objective .add-input{
+  width: 550rpx;
+  padding: 13rpx;
+  border: 4rpx solid rgb(117, 117, 117);
+  font-size: 16px;
+}
+.add-objective .add-btn{
+  display: flex;
+  width: 80rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 0 40rpx;
+  color: #fff;
+  background-color: rgb(135, 135, 135);
+}
+.add-btn.delete{
+  font-size: 30px;
+  background-color: rgb(230, 115, 115);
+}
+.btn-hover-color{
+  opacity: .8;
+}
+.create-btn button{
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(135, 135, 135);
+  color: #fff;
+}
